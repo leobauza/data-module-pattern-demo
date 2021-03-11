@@ -4,6 +4,7 @@ const webpack = require('webpack')
 module.exports = {
   mode: 'development',
   devServer: {
+    contentBase: './web',
     hot: true,
   },
   entry: {
@@ -27,7 +28,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.wasm', '.mjs', '.js', '.json'],
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'web'),
   },
 }
