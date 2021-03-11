@@ -7,8 +7,8 @@ export default class Incrementer {
   }
 
   setVars() {
-    this.counter = this.el.querySelector('#counter')
-    this.button = this.el.querySelector('#button')
+    this.counter = this.el.querySelector('[data-target]')
+    this.button = this.el.querySelector('[data-trigger]')
   }
 
   bindEvents() {
