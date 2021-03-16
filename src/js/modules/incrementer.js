@@ -17,6 +17,7 @@ export default class Incrementer {
 
   cleanUp() {
     this.button.removeEventListener('click', this.add)
+    this.counter.innerHTML = 0;
   }
 
   add = () => {
